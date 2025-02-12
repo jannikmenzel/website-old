@@ -59,7 +59,7 @@ body {
    ======================== */
 .hero-section {
     position: relative;
-    height: 70vh;
+    height: 91vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,83 +110,6 @@ body {
 }
 
 /* ========================
-   Projekt-Sektionen
-   ======================== */
-.project-section {
-    padding: 40px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.project-section:nth-child(even) {
-    background-color: #fff;
-}
-
-.project-section:nth-child(odd) {
-    background-color: #fefefe;
-}
-
-.project-section .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1400px;
-}
-
-.project-section .text {
-    flex: 1;
-    padding: 80px;
-    text-align: left;
-}
-
-.project-section h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.project-section p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-    text-align: justify;
-    hyphens: auto;
-    word-wrap: break-word;
-    font-weight: 200;
-}
-
-.project-section .image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    max-height: 400px;
-    object-fit: contain;
-}
-
-.project-section img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.project-section img:hover {
-    transform: scale(1.05);
-}
-
-.project-text {
-    padding-right: 2rem;
-}
-
-/* ========================
    Footer
    ======================== */
 footer {
@@ -202,25 +125,6 @@ footer {
    Responsives Design
    ======================== */
 @media (max-width: 1000px) {
-    .project-section {
-        flex-direction: column;
-    }
-
-    .project-section .container {
-        flex-direction: column;
-    }
-
-    .project-section .text {
-        padding: 20px;
-        text-align: center;
-        flex: 1;
-    }
-
-    .project-section .image {
-        margin-bottom: 20px;
-        order: -1;
-    }
-
     .navbar {
         position: fixed;
         top: 0;

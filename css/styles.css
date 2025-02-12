@@ -182,6 +182,10 @@ body {
     transform: scale(1.05);
 }
 
+.project-text {
+    padding-right: 2rem;
+}
+
 /* ========================
    Footer
    ======================== */

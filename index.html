@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Jannik Menzel</title>
     <meta name="description" content="Willkommen auf dem Portfolio von Jannik Menzel, Informatikstudent an der TU Dresden.">
     <meta name="keywords" content="Jannik Menzel, Portfolio, Informatikstudent, TU Dresden, Projekte, Blog, GitHub, Instagram, DEV">
     <link rel="canonical" href="https://jannikmenzel.me">
@@ -19,102 +18,352 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="Jannik Menzel Portfolio">
 
+    <title>Jannik Menzel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/seo.js"></script>
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark position-static">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="/">Portfolio</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Jannik Menzel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Navigation Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://jannikmenzel.me">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/blog">Studienblog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/jannikmenzel?tab=repositories">Projekte</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/jannikmenzel">Über mich</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Über mich</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projekte</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Header -->
-<header class="hero-section text-center text-light">
-    <div class="container py-5">
-        <img src="assets/icons/Profilbild.jpeg" alt="Profilbild von Jannik Menzel" class="profile-img mb-4">
-
-        <h1>
-            <span class="typewrite" data-period="2000" data-type='[ "Jannik Menzel", "Mein Portfolio" ]'>
-                <span class="wrap"></span>
-            </span>
-        </h1>
-        <noscript>
-            <h1>Jannik Menzel | Mein Portfolio</h1>
-        </noscript>
-        <p class="lead"> Ich bin Informatik Student an der <span class="highlight-name">@TUD</span>.</p>
+<!-- Hero Section -->
+<section id="hero" class="hero-section text-center text-white">
+    <div>
+        <h1>Hi, mein Name ist Jannik!</h1>
+        <p>Ich bin leidenschaftlicher
+            <span class="typewrite" data-period="2000"
+                  data-type='[ "Informatik Student.", "Hobby Entwickler.", "Web Designer.", "Tech-Enthusiast." ]'>
+        <span class="wrap"></span>
+      </span>
+        </p>
 
         <!-- Social Media Links -->
-        <div class="social-links mt-4">
-            <a href="https://www.instagram.com/jnk.mnz/" class="text-decoration-none text-light me-3" target="_blank" rel="noopener noreferrer">
+        <div class="social-links-container mt-4">
+            <a href="https://www.instagram.com/jnk.mnz/" class="text-decoration-none text-light me-3" target="_blank"
+               rel="noopener noreferrer">
                 <img src="assets/icons/instagram.svg" alt="Instagram Profil von Jannik Menzel" width="50">
             </a>
-            <a href="https://dev.to/jnk_mnz" class="text-decoration-none text-light me-3" target="_blank" rel="noopener noreferrer">
+            <a href="https://dev.to/jnk_mnz" class="text-decoration-none text-light me-3" target="_blank"
+               rel="noopener noreferrer">
                 <img src="assets/icons/dev.svg" alt="DEV Profil von Jannik Menzel" width="50">
             </a>
-            <a href="https://github.com/jannikmenzel" class="text-decoration-none text-light" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/jannikmenzel" class="text-decoration-none text-light" target="_blank"
+               rel="noopener noreferrer">
                 <img src="assets/icons/github.svg" alt="GitHub Profil von Jannik Menzel" width="50">
             </a>
         </div>
     </div>
-</header>
+</section>
 
-<!-- Studienblog -->
-<section id="about" class="about-section py-5">
+<!-- About Me -->
+<section id="about" class="about-section">
+    <div class="about-container">
+        <img src="assets/code.png" alt="About Me" class="about-img">
+    </div>
+</section>
+
+<section class="logo-carousel">
+    <div class="carousel-track">
+        <div class="carousel-card">
+            <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" class="carousel-link">
+                <img src="assets/skills/c.svg" alt="C Logo" class="carousel-logo">
+                <div class="carousel-text">C</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="carousel-link">
+                <img src="assets/skills/javascript.svg" alt="JavaScript Logo" class="carousel-logo">
+                <div class="carousel-text">JavaScript</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://dart.dev/" target="_blank" class="carousel-link">
+                <img src="assets/skills/dart.svg" alt="Dart Logo" class="carousel-logo">
+                <div class="carousel-text">Dart</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.python.org/" target="_blank" class="carousel-link">
+                <img src="assets/skills/python.svg" alt="Python Logo" class="carousel-logo">
+                <div class="carousel-text">Python</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.latex-project.org/" target="_blank" class="carousel-link">
+                <img src="assets/skills/latex.svg" alt="LaTeX Logo" class="carousel-logo">
+                <div class="carousel-text">LaTeX</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="carousel-link">
+                <img src="assets/skills/html.svg" alt="HTML Logo" class="carousel-logo">
+                <div class="carousel-text">HTML</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="carousel-link">
+                <img src="assets/skills/css.svg" alt="CSS Logo" class="carousel-logo">
+                <div class="carousel-text">CSS</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://getbootstrap.com/" target="_blank" class="carousel-link">
+                <img src="assets/skills/bootstrap.svg" alt="Bootstrap Logo" class="carousel-logo">
+                <div class="carousel-text">Bootstrap</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.sql.org/" target="_blank" class="carousel-link">
+                <img src="assets/skills/sql.svg" alt="SQL Logo" class="carousel-logo">
+                <div class="carousel-text">SQL</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.mysql.com/" target="_blank" class="carousel-link">
+                <img src="assets/skills/mysql.svg" alt="MySQL Logo" class="carousel-logo">
+                <div class="carousel-text">MySQL</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://wordpress.org/" target="_blank" class="carousel-link">
+                <img src="assets/skills/wordpress.svg" alt="WordPress Logo" class="carousel-logo">
+                <div class="carousel-text">WordPress</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.framer.com/" target="_blank" class="carousel-link">
+                <img src="assets/skills/framer.svg" alt="Framer Logo" class="carousel-logo">
+                <div class="carousel-text">Framer</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://flutter.dev/" target="_blank" class="carousel-link">
+                <img src="assets/skills/flutter.svg" alt="Flutter Logo" class="carousel-logo">
+                <div class="carousel-text">Flutter</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://commonmark.org/" target="_blank" class="carousel-link">
+                <img src="assets/skills/markdown.svg" alt="Markdown Logo" class="carousel-logo">
+                <div class="carousel-text">Markdown</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.canva.com/" target="_blank" class="carousel-link">
+                <img src="assets/skills/canva.svg" alt="Canva Logo" class="carousel-logo">
+                <div class="carousel-text">Canva</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.figma.com/" target="_blank" class="carousel-link">
+                <img src="assets/skills/figma.svg" alt="Figma Logo" class="carousel-logo">
+                <div class="carousel-text">Figma</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="carousel-link">
+                <img src="assets/skills/photoshop.svg" alt="Photoshop Logo" class="carousel-logo">
+                <div class="carousel-text">Photoshop</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.adobe.com/products/photoshop-lightroom.html" target="_blank" class="carousel-link">
+                <img src="assets/skills/lightroom.svg" alt="Lightroom Logo" class="carousel-logo">
+                <div class="carousel-text">Lightroom</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.adobe.com/products/illustrator.html" target="_blank" class="carousel-link">
+                <img src="assets/skills/illustrator.svg" alt="Illustrator Logo" class="carousel-logo">
+                <div class="carousel-text">Illustrator</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.adobe.com/products/premiere.html" target="_blank" class="carousel-link">
+                <img src="assets/skills/premiere.svg" alt="Premiere Logo" class="carousel-logo">
+                <div class="carousel-text">Premiere</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.jetbrains.com/idea/" target="_blank" class="carousel-link">
+                <img src="assets/skills/intellij.svg" alt="IntelliJ Logo" class="carousel-logo">
+                <div class="carousel-text">IntelliJ</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.jetbrains.com/pycharm/" target="_blank" class="carousel-link">
+                <img src="assets/skills/pycharm.svg" alt="PyCharm Logo" class="carousel-logo">
+                <div class="carousel-text">PyCharm</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.jetbrains.com/clion/" target="_blank" class="carousel-link">
+                <img src="assets/skills/clion.svg" alt="CLion Logo" class="carousel-logo">
+                <div class="carousel-text">CLion</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://code.visualstudio.com/" target="_blank" class="carousel-link">
+                <img src="assets/skills/vscode.svg" alt="VS Code Logo" class="carousel-logo">
+                <div class="carousel-text">VS Code</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://git-scm.com/" target="_blank" class="carousel-link">
+                <img src="assets/skills/git.svg" alt="Git Logo" class="carousel-logo">
+                <div class="carousel-text">Git</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.android.com/" target="_blank" class="carousel-link">
+                <img src="assets/skills/android.svg" alt="Android Logo" class="carousel-logo">
+                <div class="carousel-text">Android</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.microsoft.com/en-us/microsoft-365/" target="_blank" class="carousel-link">
+                <img src="assets/skills/office.svg" alt="Office Logo" class="carousel-logo">
+                <div class="carousel-text">Office</div>
+            </a>
+        </div>
+        <div class="carousel-card">
+            <a href="https://www.notion.so/" target="_blank" class="carousel-link">
+                <img src="assets/skills/notion.svg" alt="Notion Logo" class="carousel-logo">
+                <div class="carousel-text">Notion</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="projects-section">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 text-container text-center">
-                <h2 class="section-title">Mein Studienblog</h2>
-                <hr>
-                <p class="section-text">
-                    In meinem Studienblog teile ich regelmäßig meine Gedanken und Erkenntnisse zu verschiedenen spannenden Themen aus der Welt der Informatik.
-                    Meine Beiträge umfassen eine Vielzahl von Themen wie Künstliche Intelligenz, Selbstentwicklung, Mathematik, Cybersecurity und vieles mehr.
-                </p>
-                <hr>
-                <div>
-                    <button class="learn-more" onclick="window.location.href='/blog'">
-                        <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">Zum Blog</span>
-                    </button>
+        <h2 class="text-center mb-5">Meine Projekte</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Terminal Tactics Battleship</h5>
+                        <p class="card-text">Terminal Tactics Battleship ist eine Command-Line basierte Implementierung des klassischen Spiels Schiffe versenken.</p>
+                        <a href="https://github.com/jannikmenzel/Terminal_Tactics" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Widgify</h5>
+                        <p class="card-text">Widgify ist eine mobile App für Android, die speziell für Studierende
+                            entwickelt wurde und bei der Studienorganisation hilft</p>
+                        <a href="https://github.com/jannikmenzel/widgify" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">iFSR-Sharepicgenerator</h5>
+                        <p class="card-text">Der iFSR Sharepicgenerator ermöglicht es den Mitgliedern des
+                            Fachschaftsrats Informatik, schnell und unkompliziert Sharepics für Social Media zu
+                            erstellen.</p>
+                        <a href="https://github.com/jannikmenzel/iFSR-Sharepicgenerator" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">iFSR-Persönlichkeitstest</h5>
+                        <p class="card-text">Der iFSR Persönlichkeitstest hilft Studierenden, mehr über ihre Interessen im Zusammenhang mit Studiengängen der Fakultät Informatik zu erfahren.</p>
+                        <a href="https://github.com/jannikmenzel/iFSR-Personality-Test" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Studienblog</h5>
+                        <p class="card-text">Hier teile ich interessante Artikel zu Themen aus der Informatik, Mathematik und Selbstentwicklung.</p>
+                        <a href="https://github.com/jannikmenzel/blog" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Soft Skills Self-Test</h5>
+                        <p class="card-text">Der Soft Skills Self-Test ist eine Flask Web-Applikation, die es Nutzern
+                            ermöglicht, ihre Soft Skills zu bewerten und gezielt weiterzuentwickeln.</p>
+                        <a href="https://github.com/jannikmenzel/Soft_Skills_Self-Test" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Kontakt Section -->
+<section id="contact" class="contact-section">
+    <div class="container text-center">
+        <h2 class="section-title">Kontakt</h2>
+        <p class="contact-text">Bei Fragen oder Anregungen zur Zusammenarbeit bin ich per E-Mail erreichbar</p>
+        <a href="mailto:jannik.menzel@ifsr.de" class="btn contact-btn">E-Mail schreiben</a>
+    </div>
+</section>
+
+<!-- Trennlinie -->
+<hr class="footer-divider">
+
 <!-- Footer -->
-<footer class="bg-dark py-4 text-center text-light">
-    <p>&copy; 2025 Jannik Menzel</p>
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2025 Jannik Menzel. Alle Rechte vorbehalten.</p>
+        <div class="social-links-container mt-3">
+            <a href="https://www.instagram.com/jnk.mnz/" class="text-decoration-none text-light me-3" target="_blank"
+               rel="noopener noreferrer">
+                <img src="assets/icons/instagram.svg" alt="Instagram Profil von Jannik Menzel" width="30">
+            </a>
+            <a href="https://dev.to/jnk_mnz" class="text-decoration-none text-light me-3" target="_blank"
+               rel="noopener noreferrer">
+                <img src="assets/icons/dev.svg" alt="DEV Profil von Jannik Menzel" width="30">
+            </a>
+            <a href="https://github.com/jannikmenzel" class="text-decoration-none text-light" target="_blank"
+               rel="noopener noreferrer">
+                <img src="assets/icons/github.svg" alt="GitHub Profil von Jannik Menzel" width="30">
+            </a>
+        </div>
+    </div>
 </footer>
+
+<!-- Hintergrund -->
+<div class="grid-background"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/typewriter.js"></script>
+<script src="js/spotlight.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

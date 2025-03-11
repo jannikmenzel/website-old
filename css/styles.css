@@ -244,6 +244,7 @@ body {
     height: 300px;
     display: flex;
     flex-direction: column;
+    color: #cccccc;
 }
 
 .projects-section h2 {

@@ -171,7 +171,7 @@ body {
 }
 
 .carousel-card {
-    background-color: #202020;
+    background-color: #20202070;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -239,12 +239,13 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    background-color: transparent;
+    background-color: #20202040;
     padding: 10px;
     height: 300px;
     display: flex;
     flex-direction: column;
     color: #cccccc;
+    margin-top: 1.5rem;
 }
 
 .projects-section h2 {
@@ -295,8 +296,8 @@ body {
    Contact
    ======================== */
 .contact-section {
-    padding: 60px 80px;
-    background: transparent;
+    padding: 4rem 5rem;
+    background: #20202040;
     color: white;
     text-align: center;
     border-radius: 10px;
